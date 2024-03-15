@@ -118,7 +118,7 @@ def strict_constraint(n, h, N, alph_size):
     return left > right
 
 
-log = pm4py.read_xes("bpi_challenge_incidents.xes") #Load the log you want
+log = pm4py.read_xes("../bpi_challenge_incidents.xes") #Load the log you want
 print(log.head(100))
 
 trace_seq = log[EVENT_ID].tolist()
